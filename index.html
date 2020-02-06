@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Self Introduction</title>
+    <!-- TODO: cssファイルを作る -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <header>
+      <div class="h-container">
+        <div class="header-left">
+          <p>Amazing Life</p>
+        </div>
+        <div class="header-right">
+          
+        </div>
+      </div>
+    </header>
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>タイヤ交換の勧め</h1>
+        <h2>なぜタイヤを交換するべきか</h2>
+        <img class="wheel1" src="https://tire.bridgestone.co.jp/dueler/common/images/img_hl850_01.png">
+        <img class="wheel2" src="https://tire.bridgestone.co.jp/dueler/common/images/img_hl850_01.png">
+        <img class="wheel3" src="https://tire.bridgestone.co.jp/dueler/common/images/img_hl850_01.png">
+        <img class="wheel4" src="https://tire.bridgestone.co.jp/dueler/common/images/img_hl850_01.png">
+      
+      </div>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="marquee">• • • あなたはいつタイヤを変えましたか？　       &emsp;&emsp; 覚えていない？    &emsp;             WTF lol
+        <span class="fas fa-shuttle-van"></span>
+      </div>
+    </div>
+
+     
+    <div id="explain" class="ex-wrapper">
+      <div class="ex-container">
+        <h4>あなたはドライブ中に•••</h4>
+        <h4>&emsp;ストレスを感じませんか</h4>
+        <p class="stripe1">質が悪い、劣化したタイヤを装着していると、地面からの振動を受け取り、
+          また、地面を滑りやすくなり、余計なハンドル操作と神経を使うことになります。
+        <span class="st-p">このことが運転中に感じるストレスの増強を招きます。</span><img class="stress1" src="https://usami-net.com/assets/img/content/personal/carcare/tire_shop/sub_02_sp.jpg"> 
+        <img class="stress2" src="https://response.jp/imgs/thumb_h2/1489631.jpg"> </p>
+        <h4>タイヤを変えることで</h4>
+        <p class="stripe2">タイヤのローリングをよりスムーズに、操作性を上げて快適なドライブをおくれます。
+          また、車の用途に合うタイヤを選ぶことで長持ちかつ理想のドライブへ。<br>
+          <img class="stress3" src="https://pbs.twimg.com/media/ECTRF3wXkAA5ZWp.jpg">
+          <img class="stress4" src="https://autoavail.co.jp/wp/wp-content/uploads/2018/05/%E6%A0%BC%E5%AE%89%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%AB%E3%83%BC%E3%81%AE%E3%83%8F%E3%82%99%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%AB%E3%83%BC.jpg">
+        </p>
+       </div>
+     </div>
+    </div>
+    <div class="search-wrapper">
+      <div class="search-container">
+        <div class="search-engine">
+          <label><span class="searching">タイヤの大きさから検索</span></label>
+          <select id="model" onchange="lapin()">
+            <option value="selection">選択してください</option>
+            <option value="ecpiaNH100C,NEXTRY,SEIBERLING SL101" id=”taiya1”>155 65R 13</option>
+            <option value="REGNO GR-Leggera,ecpiaNH100C,NEXTRY" id="taiya2">155 55R 14</option>
+            <option value="REGNO GR-Leggera,ecpiaNH100C,NEXTRY" id="taiya3">165 55R 14</option>
+            <option value="POTENZA RE-71RS,NEXTRY" id="taiya4">165 50R 15</option>
+          </select>
+          <br/>
+          <br/>
+          <div id="message_area"></div>
+  
+          <script language="javascript" type="text/javascript">
+        // イベントハンドラー
+          function flight() {
+            var model = document.getElementById("model").value;
+            var call = document.getElementById("call").value;
+  
+            var message = "";
+            if(model) {
+              message = model + " " + call.toUpperCase();
+            }
+            document.getElementById("message_area").innerHTML = message;
+          }
+  
+        // イベントハンドラーを対応付ける
+           document.getElementById("call").onchange = lapin;
+
+          </script>
+
+
+          <p><input type="submit" value="送信"　id="sub-buttun"></p>
+
+  　     </div>
+      </div>
+    </div>
+  <div class="modal" id="modal-content1">
+    <p>該当サイズの在庫あり</p><img class="stock1" src="https://image1.shopserve.jp/tirestage.com/pic-labo/limg/regnogrxi.jpg?t=20150202170530">
+    <p><a id="modal-close1" class="button-link">閉じる</a></p>
+  </div>
+  <div class="modal" id="modal-content2">
+    <p>該当サイズの在庫あり</p><img class="stock2" src="https://image1.shopserve.jp/tirestage.com/pic-labo/limg/regnogrxi.jpg?t=20150202170530">
+    <p><a id="modal-close2" class="button-link">閉じる</a></p>
+  </div>
+  <div class="modal" id="modal-content3">
+    <p>該当サイズの在庫あり</p><img class="stock3" src="https://image1.shopserve.jp/tirestage.com/pic-labo/limg/regnogrxi.jpg?t=20150202170530">
+    <p><a id="modal-close3" class="button-link">閉じる</a></p>
+  </div>
+  <div class="modal" id="modal-content4">
+    <p>該当サイズの在庫あり</p><img class="stock4" src="https://image1.shopserve.jp/tirestage.com/pic-labo/limg/regnogrxi.jpg?t=20150202170530">
+    <p><a id="modal-close4" class="button-link">閉じる</a></p>
+  </div>
+
+    <div class="footer-main">
+      <div class="footer-wrapper">
+        <div class="footer-container">
+         <div class="footer-right">
+           <span class="fab fa-twitter faa-wrench animated"></span>
+         </div>
+        </div>
+      </div>
+    </div>
+    <!-- TODO: ここにかいていく -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="js/my.js"></script>
+  </body>
+</html>

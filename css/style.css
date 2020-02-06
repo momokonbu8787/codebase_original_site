@@ -1,0 +1,247 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+/* ------------------------- */
+
+
+
+
+.top-wrapper{
+    background-image:url(https://livedoor.blogimg.jp/spui-tozan/imgs/d/5/d59034fe.jpg);
+    height:1000px;
+    background-size:cover;
+    position:relative;
+ }
+ 
+ .container {
+ width:1000px;
+ margin: 0 auto;
+ }
+ .container h1 {
+   color:white;
+   font-weight: bold;
+   padding-top: 180px;
+   font-size: 60px;
+ }
+ .container h2 {
+     color:white;
+     padding-bottom: 300px;
+     font-size: 70px;
+ }
+.wheel1 {
+    padding-right:100px;
+    position:absolute;
+    right:2px;
+    padding-bottom:4px;
+}
+.wheel1:hover {
+    padding-bottom:30px;
+}
+.wheel2 {
+    padding-right:200px;
+    position:absolute;
+    right:4px;
+    padding-top:6px;
+    
+}
+.wheel3 {
+    padding-right: 300px;
+    position:absolute;
+    right:6px;
+}
+.wheel4 {
+    padding-right:400px;
+    position:absolute;
+    right:8px;
+    padding-top:13px;
+}
+.marquee-wrapper {
+    background-color:black;
+    height:40px;
+}
+.marquee {
+     color:black;
+     width:100%;
+     padding-left:500px;
+     white-space: nowrap;
+     font-size: 30px;
+     color:white;
+     background-size: cover;
+
+     animation-name: marquee;
+     animation-duration: 60s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+ }
+ @keyframes marquee {
+    from    { transform: translate(0%); } 
+    100%,to { transform: translate(-100%); }
+}
+.fas {
+    color:white;
+    z-index:3;
+}
+ .picture1 {
+     float:right;
+     display: block;
+     opacity:0.5;
+ }
+ header{
+     background-color:rgba(0,128,128,0.8);
+     background-size:100%;
+     width:100%;
+     height:65px;
+     position: fixed;
+     z-index:10;
+     line-height:65px;
+ 
+ }
+ header p {
+     color:#483D8B;
+     padding-left:20px;
+     font-family: sans-serif;
+     font-size:60px;     
+ }
+
+footer {
+    position:fixed;
+    z-index:10;
+    background-color:rgba(0,128,128,0.8);
+    width:100%;
+    height:40px;
+}
+
+.contents-wrapper {
+    width:1000px;
+
+}
+.contents-container {
+    width:800px;    
+    margin: 0 auto;
+}
+h4 {
+    font-size: 30px;
+    padding-bottom:30px;
+    padding-top:20px;
+
+}
+.menu-wrapper {
+    padding:50px;
+}
+.menu-container {
+    text-align: center;
+}
+.ex-wrapper {
+    height:1300px;
+    margin:100px 150px;    
+}
+.ex-container {
+    width:1000px;
+    margin:0 auto;
+}
+.ex-container p {
+    font-size:20px;
+    height:600px;
+}
+.stripe1 {
+    display:none;
+   
+}
+.st-p {
+    font-weight: bold;
+}
+.stripe2 {
+    display:none;
+}
+.stress1 {
+    display:none inline-block;
+    width:400px;
+    height:400px;
+    padding:30px 10px 0px 20px;
+}
+.stress2 {
+    display:none inline-block;
+    width:500px;
+    height:400px;
+    padding:30px 0 0px 0 ;
+}
+.stress3 {
+    display:none inline-block;
+    width:400px;
+    height:400px;
+}
+.stress4 {
+    display:none inline-block;
+    width:400px;
+    height:400px;
+}
+.search-wrapper {
+    width:1000px;
+}
+.serach-container {
+    width:1000px;
+    margin:0 auto;
+}
+.search-engine {
+    height: 200px;
+    padding:80px 0;
+    padding-left:300px;
+    font-size:20px;
+    
+}
+.seaching {
+    border:5px solid  black;
+}
+#modal-content {
+    width:300px;
+    margin:1.5em auto 0;
+    padding:100px 20px 10px 20px;
+    border:2px solid cadetblue;
+    background-color:#fff;
+    z-index:10;
+    margin-bottom: 200px;
+}
+.modal {
+    display:none;
+}
+.modal p {
+    margin-top:30px;
+}
+.modal p:first-child {
+    margin-top:0;
+}
+.button-link {
+    color:#00f;
+    text-decoration:underline;
+
+}
+.button-link:hover {
+    cursor:pointer;
+    color:#f00;
+}
+
+.footer-main {
+    height:160px;
+    background-color:rgba(0,128,128,0.8);
+    background-size: cover;
+}
+.footer-wrapper{
+    margin:0 auto;
+    width:1100;
+}
+.footer-right {
+    
+}
